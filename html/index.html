@@ -5,9 +5,10 @@
     <title>Dev Quiz</title>
 
     <!-- Estilos Ref. -->
+    <link rel="stylesheet/less" type="text/css" href="../less/boot.less"/>
     <link rel="stylesheet/less" type="text/css" href="../less/main.less"/>
-    <link rel="stylesheet/less" type="text/css" href="../less/quiz.less"/>
     <link rel="stylesheet/less" type="text/css" href="../less/header.less"/>
+    <link rel="stylesheet/less" type="text/css" href="../less/chart.less"/>
 
     <!-- Less Ref. -->
     <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
@@ -28,7 +29,7 @@
       <section id="quiz">
         <div class="quiz-container">
 
-          <div class="quiz-init-container">
+          <div class="quiz-init-container hidden">
             <div class="quiz-init-title">
               <h1>Front-end Quiz</h1>
               <p>Jogo de perguntas para testar seus conhecimentos em front-end</p>
@@ -53,7 +54,7 @@
             </div>
           </div>
 
-          <div class="quiz-container-main hidden">
+          <div class="quiz-main-container hidden">
             <div class="quiz-header">
               <div class="quiz-header-title">
                 <h1>Front-end Quiz</h1>
@@ -89,6 +90,27 @@
               <div class="quiz-footer-next-quest">
                 <button>Próxima</button>
               </div>
+            </div>
+          </div>
+
+          <div class="quiz-result-container">
+            <div class="quiz-result-title">
+              <h1>Front-end Quiz</h1>
+              <p>Parabéns, você completou o desafio!</p>
+            </div>
+            <div class="quiz-result-chart">
+              <p>Veja sua <bld>pontuação:</bld></p>
+              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle-chart__background" stroke="#e9e9e9" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <circle class="circle-chart__circle" stroke="#65b6e9" stroke-width="2" stroke-dasharray="50,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <g class="circle-chart__info">
+                  <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">50%</text>
+                  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Intermediário</text>
+                </g>
+              </svg>
+            </div>
+            <div class="back-to-init">
+              <button>Refazer o teste</button>
             </div>
           </div>
 
