@@ -27,42 +27,81 @@
 
       <section id="quiz">
         <div class="quiz-container">
-          <div class="quiz-header">
-            <div class="quiz-header-title">
+
+          <div class="quiz-init-container">
+            <div class="quiz-init-title">
               <h1>Front-end Quiz</h1>
-              <p>Teste suas habilidades com esse questionário</p>
+              <p>Jogo de perguntas para testar seus conhecimentos em front-end</p>
             </div>
-            <div class="quiz-header-timer">
-              <p>Tempo restante</p>
-              <div id="timer">00</div>
+            <div class="quiz-init-level-choice">
+              <div class="levels-title"><p>Teste seu <bld>nível de experiência:</bld></p></div>
+              <div class="level-junior level-selected">
+                <i class="level-icon fas fa-male"></i>
+                <p>Júnior</p>
+              </div>
+              <div class="level-mid">
+                <i class="level-icon fas fa-running"></i>
+                <p>Sênior</p>
+              </div>
+              <div class="level-senior">
+                <i class="level-icon fas fa-skating"></i>
+                <p>Pleno</p>
+              </div>
             </div>
-            <div class="quiz-header-timer-bar">
-              <div id="timer_bar"></div>
-            </div>
-          </div>
-          <div id="quiz_questions">
-            <div class="question-title">1. O que significa a sigla HTML?</div>
-            <div class="question-option">
-              <div class="question-option-title">Hyper Text Markup Language</div>
-              <div class="question-option-icon hidden"><i class="far fa-times-circle"></i></div>
-            </div>
-            <div class="question-option correct-option">
-              <div class="question-option-title">Hyper Text Markup Language</div>
-              <div class="question-option-icon"><i class="far fa-check-circle"></i></div>
-            </div>
-            <div class="question-option wrong-option">
-              <div class="question-option-title">Hyper Text Markup Language</div>
-              <div class="question-option-icon"><i class="far fa-times-circle"></i></div>
+            <div class="go-to-quiz">
+              <button>Iniciar Quiz</button>
             </div>
           </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer-quest-indicator">
-              <p><b>1</b> de <b>5</b> questões</p>
+
+          <div class="quiz-container-main hidden">
+            <div class="quiz-header">
+              <div class="quiz-header-title">
+                <h1>Front-end Quiz</h1>
+                <p>Teste suas habilidades com esse questionário</p>
+              </div>
+              <div class="quiz-header-timer">
+                <p>Tempo restante</p>
+                <div id="timer">00</div>
+              </div>
+              <div class="quiz-header-timer-bar">
+                <div id="timer_bar"></div>
+              </div>
             </div>
-            <div class="quiz-footer-next-quest">
-              <button>Próxima <i class="far fa-arrow-alt-circle-right"></i></button>
+            <div id="quiz_questions">
+              <div class="question-title">1. O que significa a sigla HTML?</div>
+              <div class="question-option">
+                <div class="question-option-title">Hyper Text Markup Language</div>
+                <div class="question-option-icon hidden"><i class="far fa-times-circle"></i></div>
+              </div>
+              <div class="question-option correct-option">
+                <div class="question-option-title">Hyper Text Markup Language</div>
+                <div class="question-option-icon"><i class="far fa-check-circle"></i></div>
+              </div>
+              <div class="question-option wrong-option">
+                <div class="question-option-title">Hyper Text Markup Language</div>
+                <div class="question-option-icon"><i class="far fa-times-circle"></i></div>
+              </div>
+            </div>
+            <div class="quiz-footer">
+              <div class="quiz-footer-quest-indicator">
+                <p><b>1</b> de <b>5</b> questões</p>
+              </div>
+              <div class="quiz-footer-next-quest">
+                <button>Próxima</button>
+              </div>
             </div>
           </div>
+
+          <div class="quiz-configs">
+            <div class="quiz-config-language"><i class="config-icon fas fa-globe-americas"></i></div>
+            <div class="quiz-config-theme"><i class="config-icon fas fa-adjust"></i></div>
+          </div>
+
+          <div class="quiz-credits">
+            <p>Desenvolvido por <bld>Henrique Garcia</bld> 
+            | Github: <bld><a href="https://github.com/henriquegarcia-web" target="_blank">henriquegarcia-web</a></bld></p>
+          </div>
+
         </div>
       </section>
       
